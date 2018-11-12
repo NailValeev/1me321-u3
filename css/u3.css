@@ -177,6 +177,13 @@ picture>img{
   height: 200px;
 }
 
+#rea-pic-holder {
+  background-image: url("../images/sale-landscape.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+}
+
 /* Styling all font awesome icons */
 .fa {
   padding: 10px;
@@ -295,6 +302,104 @@ legend {
   margin: 10px auto;
 }
 
+.local-nav-header{
+  width:100%;
+  background-color: orange;
+  color: white;
+  border: 2px solid darkorange;
+  border-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0; 
+  text-align: center;
+}
+
+.local-nav-holder{
+  width:100%;
+  background-color: white;
+  padding: 0;
+  border: 2px solid darkorange;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0; 
+}
+
+.local-nav-footer{
+  text-align: center;
+  font-weight: bold;
+}
+
+.local-nav-card-holder{
+  float: left;
+  display: block;
+  width: 26%;
+  margin: 3%;
+}
+
+.local-nav-card-holder>a{
+text-decoration: none;
+}
+
+.local-nav-card-header{
+  width:100%;
+  text-align: center;
+  color: white;
+  background-color: darkcyan;
+  padding: 10px;
+  margin: 10px;
+  margin-bottom: 0;
+  border: none;
+  border-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;  
+}
+
+.local-nav-card{
+  width:100%;
+  background-color: cyan;
+  padding: 10px;
+  margin: 0 10px 10px 10px;
+  border: none;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;  
+}
+
+.local-nav-card-1{
+  display: block;
+  margin: 5px auto;
+  background-image: url("../images/utrustning-thumbnail.jpg");
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.local-nav-card-2{
+  display: block;
+  margin: 5px auto;
+  background-image: url("../images/summer-course-thumbnail.jpg");
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.local-nav-card-3{
+  display: block;
+  margin: 5px auto;
+  background-image: url("../images/winter-course-thumbnail.jpg");
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.large-margins {
+  margin-bottom: 50px;
+}
 
 @media screen and (max-width: 640px)	{	
   nav	{ 
@@ -316,21 +421,30 @@ legend {
     margin-left: 0;
     clear: both;
   }
+  .youtube-frame {
+    width: 420px;
+    height: 315px;
+  }  
+  #shop-pic-holder {
+    background-image: url("../images/utrustning-landscape-small.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150px;
+  }
+  #rea-pic-holder {
+    background-image: url("../images/sale-landscape-small.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150px;
+  }
+  body {
+    background-image: url("../images/bg-small.jpg");
+  }
   header {
     height: 60px;
     background-size: auto 60px;	
     font-size: 14px;
-  }
-
-  #shop-pic-holder {
-    background-image: url("../images/utrustning-portrait.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    height: 250px;
-  }
-  .youtube-frame {
-    width: 420px;
-    height: 315px;
+    background-image: url("../images/headerbg-small.png");
   }
 }	
 
@@ -360,6 +474,43 @@ legend {
     height: 224px;
   }
 
+  body {
+    background-image: url("../images/bg-xsmall.jpg");
+  }
+  header {
+    height: 50px;
+    background-size: auto 50px;	
+    font-size: 12px;
+    background-image: url("../images/headerbg-xsmall.png");
+  }
+  #shop-pic-holder {
+    background-image: url("../images/utrustning-portrait.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 250px;
+  }
+  #rea-pic-holder {
+    background-image: url("../images/sale-portrait.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 250px;
+  }
+
+  .local-nav-card-holder{
+    float: none;
+    display: block;
+    width: 80%;
+    margin: 5px auto;
+  }
+
+  .local-nav-card{
+    width: 90%;
+  }
+
+  .local-nav-card-header{
+    width: 90%;
+  }
+
 }	
 
 @media screen	and	(max-width: 340px)	{	
@@ -379,10 +530,19 @@ legend {
   input[type=text] {
     width: 100%;
   }
-
   header h1:before {
     content: none;
-  }	
-  
-
+  }
+  #shop-pic-holder {
+    background-image: url("../images/utrustning-portrait-small.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 150px;
+  }
+  #rea-pic-holder {
+    background-image: url("../images/sale-portrait-small.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 150px;
+  }
 }	
