@@ -1,0 +1,388 @@
+html,	body,	div,	header,	nav,	main,	footer {
+  margin: 0;
+  padding: 0;
+}	
+
+header, nav, main, footer {
+  display:block;
+}	
+
+body {
+  background-image: url("../images/bg.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  font-family: 'Roboto', serif;
+  font-size: 12px;
+  color: DarkSlateGrey;
+}
+
+header {
+  color: white;
+  font-family: 'Pangolin', serif;
+  font-size: 24px;
+  text-shadow: 4px 4px 4px #333333;
+  background-image: url("../images/headerbg.png");
+  height: 80px;
+  background-position: center;
+  text-align: center;
+  position: relative;
+}
+
+header h1, header h3 {
+  padding: 10px 10px 5px 10px;
+  margin: 0;
+}
+
+header h1:before {
+  content: url(../images/logotype-header.png)
+}	
+
+.site-logo {
+  display: inline;
+  border-radius: 10%;
+  display: block;
+  height: 100%;
+  margin: 0 auto 20px;
+  width: 200px;
+  background-image: url("../images/logotype.png"); 
+}
+
+main {
+  padding: 10px;
+  margin-left: 15%;
+  background-color: lightcyan;
+}
+
+main:after {
+  content:"";	
+  display:block;
+  clear:both;
+}	
+
+main h2, main h3 {
+  color: DarkSlateBlue;
+  font-style: italic;
+}
+
+main h3 {
+  border-top:1px	solid	#999;
+  padding-top:10px;
+  clear:right;	
+}
+
+footer {
+  color: white;
+  background-color: transparent;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+  clear: both;
+}
+
+
+nav {
+  float: left;
+  width: 15%;
+}
+
+nav ul {
+  padding: 0;
+  list-style: none;
+}
+
+nav ul li {
+  display: block;
+  margin-right: 0;
+  margin-bottom: 10px;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  padding: 5px;
+  padding-left: 20px;
+}
+
+nav a:link, nav a:visited {
+  color: White;
+  background-color: rgba(0, 47, 255, 0.555);
+}
+
+nav a:not(.choosen):hover, nav a:not(.choosen):active {
+  background-color: transparent;
+  color: blue;
+}
+
+.booking{
+  color: orange !important;
+  font-weight: bold;
+}
+
+th, td {
+  	border:1px	solid	#666;
+    padding: 10px;
+}
+
+table {
+  border-collapse:collapse;
+  margin-bottom: 20px;
+}
+
+tr {
+  background-color: White;
+}
+
+th {
+  background-color: aqua;
+  color: Blue;
+}
+
+tr:nth-child(even) {
+  background-color: LightGrey;
+}
+
+#wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: transparent;
+}
+
+.choosen {
+  background-color: lightcyan !important;
+  color: blue !important;
+  font-size: 120%;
+}	
+
+#floatImg {
+  float: right;
+  max-width: 120px;
+  margin: 10px;
+}
+
+img {
+  max-width: 100%;
+}
+
+picture>img{
+  width: 100%;
+  margin: 5px auto;
+  display: block;
+}
+
+#shop-pic-holder {
+  background-image: url("../images/utrustning-landscape.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+}
+
+/* Styling all font awesome icons */
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 15px;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+  background-color: seagreen;
+}
+
+.fa-custom {
+  background: blue;
+  color: white;
+}
+
+/* Form styling */
+fieldset {
+  margin-bottom: 10px;
+}
+
+input, textarea {
+  padding: 5px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin: 5px;
+  box-sizing: border-box;
+}
+
+textarea {
+  margin: 0;
+  width: 60%;
+}
+
+input[type=text] {
+  width: 60%;
+}
+
+input[type=date] {
+  width: 100px;
+}
+
+input[type=time] {
+  width: 100px;
+}
+
+input[type=submit] {
+  background-color: seagreen;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: darkgreen;
+}
+
+.form-holder {
+  border-radius: 10px;
+  background-color: gainsboro;
+  padding: 10px 30px;
+}
+
+
+.form-holder-booking {
+  background-color: navajowhite;
+}
+
+fieldset {
+  border-radius: 10px;
+}
+
+legend {
+  font-size: 120%;
+  font-weight: bold;
+}
+
+.narrow {
+  width: 5em;
+  height: 1.75em;
+  padding: 0;
+  border-radius: 5px;
+}
+
+
+.label-wrapper {
+  width: 22em;
+}
+
+.justified  label {
+  float:left;	width:90px;	text-align:left;	margin-top:12px;	
+}
+
+.justified input {
+  display:block; margin-top:5px;	
+}
+
+.justified-narrow  label {
+  float:left;	width:50px;	text-align:left;	margin-top:12px;	
+}
+
+.justified-narrow input {
+  display:block; margin:5px; width: 150px;	
+}
+
+.youtube-frame {
+  width: 460px;
+  height: 325px;
+  display: block;
+  margin: 10px auto;
+}
+
+
+@media screen and (max-width: 640px)	{	
+  nav	{ 
+    float: none;
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+  }	
+  nav ul li {
+    float: left;
+    margin: 0 10px;
+  }
+  nav a{
+    display: inline-block;
+    padding: 10px 10px;
+    text-align: center; 
+  }
+  main {
+    margin-left: 0;
+    clear: both;
+  }
+  header {
+    height: 60px;
+    background-size: auto 60px;	
+    font-size: 14px;
+  }
+
+  #shop-pic-holder {
+    background-image: url("../images/utrustning-portrait.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 250px;
+  }
+  .youtube-frame {
+    width: 420px;
+    height: 315px;
+  }
+}	
+
+@media screen	and	(max-width: 460px) {
+  nav{
+    margin: 0;
+    padding: 0;
+  }
+  nav ul li {
+    float: none;
+    display: block;
+    margin: 5px;
+    padding: 0;
+  }	
+	nav ul {
+    margin: 0;
+    padding: 0;
+  }
+  nav a {
+    display: block;
+    border: 3px outset darkblue;
+    border-radius: 15px;
+    padding: 5px;
+  }
+  .youtube-frame {
+    width: 280px;
+    height: 224px;
+  }
+
+}	
+
+@media screen	and	(max-width: 340px)	{	
+  table {
+    box-shadow: none;
+    width: 100%;
+  }
+  th, td {
+    display: block;
+  }
+  tr {
+    border-bottom: 2px	solid	#333;	
+  }
+  textarea {
+    width: 100%;
+  }
+  input[type=text] {
+    width: 100%;
+  }
+
+  header h1:before {
+    content: none;
+  }	
+  
+
+}	

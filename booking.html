@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta	name="viewport"	content="width=device-width,	initial-scale=1.0">	
+  <!-- Keyords in english, it is better for SEO I think-->
+  <meta name="keywords" content="kitesurfing, kite, kiteboarding, kitesurf, kiteboard, kiting, snowkite, landkite, snowkiting, spots">
+
+  <link rel="icon" href="images/favicon.ico" type="image/gif" sizes="16x16">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pangolin">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/u3.css">
+
+  <title>Takeoff-boka</title>
+</head>
+
+<body>
+  <div id="wrapper">
+
+    <header>
+      <h1>Takeoff >> Boka</h1>
+    </header>
+    
+    <nav>
+      <ul>
+        <li><a href="index.html">Hem</a></li>
+        <li><a href="kiting.html">Kiting</a></li>
+        <li><a href="courses.html">Kurser</a></li>
+        <li><a href="shop.html">Butik</a></li>
+        <li><a href="contacts.html">Kontakt</a></li>
+        <li><a href=""  class="choosen">Boka</a></li>
+      </ul>
+    </nav>
+    
+    <main>
+        <div class="form-holder form-holder-booking">
+
+            <form id="contact-form" name="contactForm" method="post"	action="http://www.olzzon.com/cgi-bin/p.cgi?epost=nv222ch-DDD-student.lnu.se&id=1"	>
+              
+              <fieldset>
+                <legend>Kurs</legend>
+                <label for="kurs1">
+                  <input type="radio" checked name="kurs" id="kurs1" value="theory"/>
+                  Kitsurfing teori (1 tim, 560 kr) 
+                </label>
+                <br />
+                <label for="kurs2">
+                    <input type="radio" name="kurs" id="kurs2" value="theory-practice"/>
+                    Kitsurfing teori o praktik , vatten (5 tim, 3100 <s>3360</s> kr) 
+                </label>
+                <br />
+                <label for="kurs3">
+                    <input type="radio" name="kurs" id="kurs3" value="practiceSnow"/>
+                    Praktiska övningar, snö (2 tim, 1200 kr) 
+                </label>
+                <label for="kurs4">
+                  <br />
+                    <input type="radio" name="kurs" id="kurs4" value="practiceWater"/>
+                    Praktiska övningar, vatten (4 tim, 2800 kr) 
+                </label>
+              </fieldset>
+              
+<!--Commented out to prevent HTML invalidation
+
+  <fieldset class = "justified justified-narrow">
+    <legend>Datum / tid</legend>
+    <label for="date">Datum:</label>
+    <input type="date" name="date" id="date"/>
+    <label for="time">Tid:</label>
+    <input type="time" name="time" id="time"/>
+  </fieldset>
+  
+-->
+            <fieldset class = "justified">
+                <legend>Datum / tid</legend>
+                <label for="date">Datum & tid</label>
+                <input type="text" name="date" id="date"/>
+              </fieldset>
+
+              <fieldset>
+                  <legend>Valfri extra tjänster</legend>
+                  <label for="insurance">
+                    <input type="checkbox" checked name="insurance" id="insurance"/>
+                    Försäkring
+                  </label>
+                  <br />
+                  <div class="label-wrapper">
+                    <label for="transfer">
+                      <input type="checkbox" checked name="transfer" id="transfer"/>
+                      Transfer
+                    </label>
+                    <label for="transfer-passengers">
+                      , antal passagerare
+                      <select class="narrow" name="transfer-passengers" id="transfer-passengers" style="float: right;">
+                        <option value="1" selected >1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                      </select>
+                    </label>
+                  </div>
+                  <br />
+                  <div class="label-wrapper">
+                  <label for="lunch">
+                      <input type="checkbox" name="lunch" id="lunch"/>
+                      Lunch
+                  </label>
+                  <label for="lunch-persons">
+                      , antal personer
+                      <select class="narrow" name="lunch-persons" id="lunch-persons" style="float: right;">
+                          <option value="1" selected>1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                      </select>
+                  </label> 
+                  </div>             
+              </fieldset>
+
+              <fieldset class = "justified">
+                  <legend>Kund uppgifter</legend>
+                  
+                  <label for="fornamn">Förnamn:</label>
+                  <input type="text" name="fornamn" id="fornamn" size="20" />
+                  
+                  <label for="efternamn">Efternamn:</label>
+                  <input type="text" name="efternamn" id="efternamn" size="20"/>
+                  
+                  <label for="email">E-postadress:</label>
+                  <input type="text" name="email" id="email" size="20"/>
+                  
+                  <label for="meddelande">Meddelande:</label>
+                  <textarea name="meddelande" id="meddelande" rows="3"></textarea>
+                  
+              </fieldset>
+              <p><input type="submit" id="submitBtn" value="Skicka meddelandet" /></p>
+              
+            </form>
+          </div>
+    </main>
+    
+    <footer>
+      <a href="https://sv-se.facebook.com/linneuniversitetet/" target="_blank" class="fa fa-facebook fa-custom"></a>
+      <a href="https://www.instagram.com/linneuniversitetet/" target="_blank" class="fa fa-instagram fa-custom"></a>
+      <a href="mailto:info@takeoffkiteschool.com" class="fa fa-envelope fa-custom"></a>
+      <a href="tel:123456789" class="fa fa-phone fa-custom"></a>
+      <a href="callto:123456789" class="fa fa-skype fa-custom"></a>
+      <a href="https://web.whatsapp.com/" class="fa fa-whatsapp fa-custom"></a>
+      <br/>
+      <span>Takeoff &copy; &nbsp; 2018</span>
+    </footer>
+    
+  </div>
+</body>
+
+</html>
